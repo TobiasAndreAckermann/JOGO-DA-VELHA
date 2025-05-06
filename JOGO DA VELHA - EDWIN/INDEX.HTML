@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo Da Velha - Tobias Ackermann RA: 152410861</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="container">
+        <div id="tela-inicial">
+            <h1>Jogo Da Velha</h1>
+            <h1>Tobias Ackermann RA: 152410861</h1>
+            <form id="login-form">
+                <input type="text" placeholder="Nome" id="nome" required>
+                <input type="password" placeholder="Senha" id="senha" required>
+                <button type="button" id="btn-entrar">Entrar</button>
+            </form>
+        </div>
+
+        <div id="tela-configuracao" class="oculto">
+            <h2>Escolha o modo de jogo</h2>
+            <button id="contra-maquina">Contra a Máquina</button>
+            <button id="dois-jogadores">Dois Jogadores</button>
+            <div id="config-dificuldade" class="oculto">
+                <h3>Escolha a dificuldade:</h3>
+                <button id="facil">Fácil</button>
+                <button id="medio">Médio</button>
+                <button id="dificil">Difícil</button>
+            </div>
+            <button id="voltar-inicial">Voltar</button>
+        </div>
+
+        <div id="tela-jogo" class="oculto">
+            <h2>Jogo da Velha</h2>
+            <div id="placar">
+                <p>Placar:</p>
+                <p id="jogador1">Jogador 1: 0</p>
+                <p id="jogador2">Jogador 2: 0</p>
+            </div>
+            <div id="tabuleiro"></div>
+            <h3 id="mensagem" class="oculto"></h3>
+            <button id="voltar-configuracao">Voltar</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
